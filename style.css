@@ -1,0 +1,86 @@
+/* style sheet */
+
+body {
+	background-color: #fff;
+	color: black;
+	font-family: 'DotGothic16', sans-serif;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 1rem;
+	background-image: url(forest.gif);
+	background-size: 250px 250px;
+}
+
+header {
+	width: 100%;
+	height: 70px;
+	background-color: orangered;
+	position: fixed;
+	z-index: 3;
+}
+
+header h2 {
+	float: left;
+	margin: 0;
+	padding-top: 14px;
+	padding-left: 10px;
+}
+
+header img {
+	display: block;
+	float: left;
+	width: 70px;
+	padding-left: 8px;
+}
+
+.viewport {
+	clear: both;
+	position: relative;
+}
+
+#sprite {
+	position: absolute;
+	left: 42%;
+	top: 180px;
+	z-index: 0;
+}
+
+#sprite img {
+	position: fixed;
+}
+
+.sky {
+	position: relative;
+	width: 100%;
+	z-index: -1;
+}
+
+.sky2 {
+	position: relative;
+	width: 100%;
+	z-index: 1;
+}
+
+.sky img {
+	display: block;
+	width: 100%;
+}
+
+.story {
+	position: relative;
+	background-color: white;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+}
+
+.story h3 {
+	margin: 0;
+	text-align: center;
+	padding-top: 45vh;
+}
+
+#home {
+	height: 300vh;
+}
