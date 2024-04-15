@@ -1,0 +1,100 @@
+/* Style page for my new hub page */
+
+/* Color codes 
+#BAD5E8 - pale
+#E8CEBA - Buff
+#13391A - Verd
+
+
+
+/* box model fix */
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+/* +++++++++++++++++++++++++++++++++++*/
+
+/* clearfix */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+/* +++++++++++++++++++++++++++ */
+
+* {
+	margin: 0;
+}
+
+body {
+	font-size: 2.5em;
+	text-align: justify;
+}
+
+h1 {
+	color: #13391A;
+	line-height: 1.5;
+}
+
+a {
+	color: #13391A;
+	text-decoration: none;
+}
+
+a:hover {
+	color: red;
+	transition: 1s;
+}
+
+img#overlay {
+	width: 100%;
+	opacity: 1.0;
+	position: absolute;
+	top: 380px;
+	z-index: 3;
+}
+
+img#bear {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	z-index: 5;
+	mix-blend-mode: darken;
+}
+
+/* 
+img#overlay:hover {
+	opacity: 0.1;
+	transition: 3s;
+}
+*/
+
+#jumbotron {
+	background-image: url(https://placekitten.com/200/300);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #BAD5E8;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.link {
+	border-bottom: 5px solid red;
+	padding-bottom: 4px;
+}
+
+
+
+
