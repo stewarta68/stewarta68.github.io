@@ -31,6 +31,7 @@
 
         h2 {
           font-size: 2.5rem;
+          font-weight: 500;
         }
 
         p {
@@ -50,7 +51,16 @@
 
         #mydiv2 {
           position: absolute;
-          top: 340px;
+          top: 390px;
+          left: 150px;
+          z-index: 7;
+          text-align: center;
+          color: black;
+        }
+
+        #mydiv3 {
+          position: absolute;
+          top: 500px;
           left: 150px;
           z-index: 7;
           text-align: center;
@@ -74,13 +84,14 @@
 <body>
   <header>
     <h1>THE VERNACULAR SETTING</h1>
+    <p>Click and hold the mouse button down to move the shapes and words</p>
   </header>
   <section id="explainer">
     <h2>Clustering the connections and building the paths to an intertwingled future.</h2>
     <h2>Bringing in the ______________,</h2>
     <h2>             , </h2>
-    <h2>
-    <p>Click and hold the mouse button down to move the shapes below</p>
+    <h2>Dimishing _____________, transfer to _______________</h2>
+    
 
 
 
@@ -89,9 +100,9 @@
     <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">                    
       <defs>                         
         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-          <stop id="stop1" stop-color="rgba(60, 117, 55, 1)" offset="0%">
+          <stop id="stop1" stop-color="rgba(225, 170, 30, 1)" offset="0%">
           </stop>
-          <stop id="stop2" stop-color="rgba(10, 168, 31, 1)" offset="100%"></stop>
+          <stop id="stop2" stop-color="rgba(200, 151, 91, 1)" offset="100%"></stop>
         </linearGradient>
       </defs>
       <path fill="url(#sw-gradient)" d="M27.3,-20.6C31.7,-16.4,28.8,-5.2,25,3.4C21.2,12,16.4,18,9.3,1.7C2.2,27.3,-7.1,30.7,-13.1,27.6C-19.1,24.6,-21.8,45.1,-22.9,6.4C-24,-2.4,-33.4,-30.3,-19.4,-44.5C-25.3,-18.6,-7.6,-40.9,1.9,-20.5C11.5,-40,23,-24.8,27.3,-20.6Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path>
@@ -99,9 +110,14 @@
   </div>
 </div>
 
+<div id="mydiv3">
+  <div id="mydivheader"><h2>People</h2></div>
+</div> 
+
 <div id="mydiv2">
   <div id="mydivheader"><h2>Connections</h2></div>
 </div>
+
 
 
 <!--?xml version="1.0" standalone="no"?     
@@ -120,6 +136,7 @@
   //Make the DIV element draggagle:
   dragElement(document.getElementById("mydiv"));
   dragElement(document.getElementById("mydiv2"));
+  dragElement(document.getElementById("mydiv3"));
 
   function dragElement(elmnt) {
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
